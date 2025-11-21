@@ -1,5 +1,13 @@
 # Email Spam Detection Project
 
+**Course**: Keamanan Data  
+**Lecturer**: Puguh Hiskiawan
+
+**Contributors**:
+- Jason Jesse Joel Polii
+- Christofer Agatha Ho
+- Paskalis Peter
+
 This project implements a machine learning pipeline for detecting spam emails. It includes data preprocessing, model training with handling for imbalanced data (SMOTE), model evaluation, and a Streamlit web application for real-time inference.
 
 ## 🚀 Features
