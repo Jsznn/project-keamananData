@@ -1,0 +1,32 @@
+data:
+  raw_path: "data/spam.csv"
+  processed_path: "data/processed_spam.csv"
+  encoding: "latin-1"
+  test_size: 0.20
+  random_state: 2
+
+preprocessing:
+  text_column: "v2"
+  target_column: "v1"
+  rename_columns:
+    v1: "target"
+    v2: "text"
+  drop_columns: ["Unnamed: 2", "Unnamed: 3", "Unnamed: 4"]
+
+feature_extraction:
+  tfidf:
+    stop_words: "english"
+    min_df: 2
+
+models:
+  naive_bayes:
+    type: "MultinomialNB"
+  logistic_regression:
+    type: "LogisticRegression"
+    max_iter: 1000
+  linear_svc:
+    type: "LinearSVC"
+
+smote:
+  random_state: 42
+  k_neighbors: 3
